@@ -24,7 +24,7 @@ public class Main {
             }
         };
 
-        Function <String, String> lambdaFunction = s -> {
+        Function<String, String> lambdaFunction = s -> {
             StringBuilder returnVal = new StringBuilder();
             for (int i = 0; i < s.length(); i++) {
                 if (i % 2 == 1) {
@@ -35,5 +35,9 @@ public class Main {
         };
         System.out.println(lambdaFunction.apply("1234567890"));
 
+    }
+
+    public static String everySecondCharacter(Function<String, String> func, String source){
+        return func.apply(source);
     }
 }
