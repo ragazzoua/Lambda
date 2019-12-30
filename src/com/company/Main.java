@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.function.Function;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class Main {
             }
         };
 
-        (String s) -> {
+        Function <String, String> lambdaFunction = s -> {
             StringBuilder returnVal = new StringBuilder();
             for (int i = 0; i < s.length(); i++) {
                 if (i % 2 == 1) {
