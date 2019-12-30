@@ -33,6 +33,7 @@ public class Main {
             }
             return returnVal.toString();
         };
+        System.out.println(lambdaFunction.apply("1234567890"));
 
     }
 }
